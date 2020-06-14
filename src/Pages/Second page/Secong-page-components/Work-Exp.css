@@ -1,0 +1,224 @@
+
+.WEX{
+    transform: scale(0.8);
+
+}
+.W-E{
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+    color: rgb(229, 233, 173);
+    font-size: 3em;
+    font-family: ttFont;
+}
+
+.workExp { 
+    text-align: center;
+    margin: 0 0% 0 0%;
+    padding: 0% 0% 20% 0%;
+    color: rgb(240, 176, 116);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+
+.WE-Box{
+    height: 55vh;
+    width: 45vw;
+    padding-right: 0%;
+}
+#WE-Box1{
+    border-right: solid white 8px;
+    height: 50vh;
+}
+#WE-Box1-2{
+    height: 50vh;
+}
+#WE-Box1:hover{
+    background-color: blanchedalmond;
+    transform: scale(1.01);
+}
+#WE-Box3{
+    border-right:  solid    white 8px;
+}
+#WE-Box4{
+    padding: 5% 0% 5% 1%;
+    height: 55vh;
+    width: 45vw;
+}
+#WE-Box4:hover{
+    background-color: blanchedalmond;
+    transform: scale(1.01);
+}
+#WE-Box5{
+    border-right: solid white 8px;
+    height: 67vh;
+}
+#WE-Box5:hover{
+    background-color: blanchedalmond;
+    transform: scale(1.01);
+}
+#WE-Box6{
+    padding-top: 5%;
+}
+
+#WE-Box6:hover{
+    background-color: blanchedalmond;
+    transform: scale(1.01);
+}
+#WE-Box7{
+    border-right:  solid    white 8px;
+    height: 69vh;
+}
+#WE-Box7:hover{
+
+    background-color: blanchedalmond;
+    transform: scale(1.01);
+}
+
+#Exp-Name{
+     font-size: 1.6em;
+     font-family: ttFont;
+
+}
+#Exp-date{
+    line-height: 2;
+    font-family: ttFont;
+    
+    
+}
+#Exp-Name2{
+    font-size: 1em;
+}
+#Exp-date2{
+    line-height: 1;
+}
+
+
+#Exp-text{
+    padding: 2% 5% 5%  3%;
+    text-align: justify;
+    line-height: 2;
+    font-size: 1.2em;
+    font-style: italic  ;
+    background-color: rgb(78, 75, 75);    
+
+}
+
+#Exp-text2{
+    padding: 2% 5% 15%  3%;
+    text-align: justify;
+    line-height: 2;
+    font-size: 1.2em;
+    font-style: italic  ;
+    background-color: rgb(78, 75, 75);    
+}
+
+.Exp-Title{
+    background-color: rgba(54, 54, 54, 0.719);    
+    padding: 3% 0 3% 2%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: left;
+}
+
+
+.Exp-Title3{
+    background-color: rgba(54, 54, 54, 0.719);    
+    padding: 3% 0 3% 1%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: left;
+}
+
+.TrioSSS{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 15%;
+    border-radius: 5%;
+}
+
+.TrioSSS:hover{
+    width: 90%;
+    background-color: rgb(212, 211, 211);
+    margin-top: 15%;
+    border-radius: 5%;
+}
+
+.PBB{
+    width: 80%;
+    margin-top: 15%;
+    border: solid 2px wheat;
+}
+.PBB:hover{
+    width: 90%;
+    margin-top: 15%;
+}
+.TCS{
+    width: 40%;
+    margin-top: 10%;
+}
+.TCS:hover{
+    width: 45%;
+    margin-top: 10%;
+}
+
+.ResLife{
+    width: 45%;
+    margin-top: 0%;
+}
+.ResLife:hover{
+    width: 50%;
+    margin-top: 0%;
+}
+.HC{
+    width: 80%;
+    margin-top: 10%;
+}
+.HC:hover{
+    width: 85%;
+    margin-top: 10%;
+}
+
+/********* Circles *******/
+
+.Circle1{
+    margin-left: 97.8%;
+    border: solid white 5px;
+    padding: 15px;
+    border-radius: 50%;
+    position: static;
+    background-color: rgb(39, 38, 38);
+}
+.Circle2{
+    margin-top: 0%;
+    margin-left: 98%;
+    border: solid white 5px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(41, 40, 40);
+}
+.Circle3{
+    margin-top: 0%;
+    margin-left: 98%;
+    border: solid white 5px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgb(41, 40, 40);
+}
+.Circle4{
+    margin-top: 0%;
+    margin-left: 98%;
+    border: solid white 5px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(41, 40, 40);
+}
+.Circle5{
+    margin-top: 0%;
+    margin-left: 98%;
+    border: solid white 5px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(41, 40, 40);
+}

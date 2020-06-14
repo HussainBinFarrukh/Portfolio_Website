@@ -1,0 +1,58 @@
+@font-face {
+    font-family: tFont;
+    src: url('../../../assets/static/Orbitron-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: wireoneFont;
+    src: url('../../../assets/WireOne-Regular.ttf');
+  }
+.Skill-Sec{
+    text-align: center;
+    padding: 0% 0% 5% 0%;
+    color: rgb(255, 255, 255);
+}
+
+#MySkill{
+    letter-spacing: 0.1em;
+    font-size: 4em;
+    text-decoration: underline;
+    font-family: wireoneFont;
+
+}
+/*<span id="SkillLevel">⬤⬤⬤◐〇</span>*/
+.skillList {
+    padding-left: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    text-align: justify;
+    line-height: 3em;
+    list-style-type: none;
+}
+#listItem{
+    color: rgb(243, 221, 95);
+    font-size: 1.7em;
+    font-family: tttFont;
+    background-color: rgba(77, 77, 77, 0.589);
+    margin: 1% 0% 1% 0%;
+        
+
+}
+#SkillLevel{
+    color: rgb(255, 254, 254);
+    font-size: 1.3em;
+    background-color: rgba(0, 0, 0, 0.432);
+    text-align: center;
+    margin: 1% 60% 1% 0% ;
+}
+#listItem:hover{
+    background-color: rgba(0, 0, 0, 0.432);
+}
+#SkillLevel:hover{
+    background-color: black;
+
+}
+
+#h2Heading{
+    padding: 3%;
+}

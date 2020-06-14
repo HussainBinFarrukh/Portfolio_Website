@@ -1,0 +1,42 @@
+.EducationSec{
+    background-color: rgba(19, 16, 16, 0.815);
+}
+
+#EduTitle{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    font-family: ttFont;
+}
+
+#USMLOGO{
+    width: 80%;
+}
+.USMInfo{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.USMInfoText{
+    margin-top: 5%;
+    font-size: 1em;
+    color: white;
+}
+
+
+.CAMInfo{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#CAMLOGO{
+    width: 80%;
+    margin: 25% 5% 0 0;
+
+}
+.CAMInfoText{
+    margin: 5% 5% 0 0;
+    font-size: 1em;
+    color: white;
+}
