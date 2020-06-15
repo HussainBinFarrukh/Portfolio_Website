@@ -15,16 +15,13 @@ const NavBar = () => {
     <img className='logo-container' src={image} alt="Logo" />
     </Link>
 
-    <img className='logo-container1' src={sig}/>
+    <img alt="logo" className='logo-container1' src={sig}/>
     <h1 className="Name">HUSSAIN  BIN  FARRUKH</h1>
 
 
         <div className='options'>
                 <a className='option' href="#Second-page">
-                About Me
-                </a>
-                <a className='option' href="#MySkills">
-                Experience 
+                About
                 </a>
                 <a className='option' href="#Contact-page">
                 Contact

@@ -5,14 +5,24 @@ import PPB from '../../../assets/AboutMe pics/PBBbcode.3a850139.gif';
 import TCS from '../../../assets/AboutMe pics/TCS.png';
 import ResLife from '../../../assets/AboutMe pics/ResLife.jpg';
 import HC from '../../../assets/AboutMe pics/HC1.jpg';
+import Resume from '../../../assets/Resume.pdf';
+import DownloadIcon from '../../../assets/Social/download.png';
 
 const WorkExp = () => {
 return (
-<div className="WEX">        
+<div id="WEX" className="WEX">        
+<br id="Exp"/>
+<br/>
+<br/><br/>
+<br/><br/>
+<br/>
       <h1 className="W-E">WORK EXPERIENCE</h1>
+      
+<div className="Download"><a id="Download" href={Resume}><img alt="Image" id="DownloadLogo" src={DownloadIcon}/> My Resume</a>
+</div>
     <div className="workExp">
 
-    <div className="WE-Box" id="WE-Box1">
+    <div className="WE-Box" id="WE-Box1" data-aos="flip-left" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="300"> 
         <div className="Circle1"></div>
             <div className="Exp-Title">
               <h2 id="Exp-Name">Computer Science Tutor</h2> <span id="Exp-date">Jan 2019 to May 2020</span>
@@ -23,15 +33,15 @@ return (
         </div>
 
         <div className="WE-Box" id="WE-Box1-2">
-        <img className="TrioSSS" src={TrioSSS} />
+        <img alt="Image" className="TrioSSS" src={TrioSSS} />
         </div>
         <div className="WE-Box" id="WE-Box3">
             <div className="Circle2"></div>
-            <img className="PBB" src={PPB} />
+            <img alt="Image" className="PBB" src={PPB} />
 
         </div>        
 
-        <div className="WE-Box" id="WE-Box4">
+        <div className="WE-Box" id="WE-Box4" data-aos="flip-right" data-aos-delay="300" data-aos-easing="ease-in-out-back " data-aos-duration="300">
             <div className="Exp-Title">
                 <h2 id="Exp-Name">PayByBarcode</h2> <span id="Exp-date">Mar 2020 to May 2020</span>
                 <h3 id="Exp-Name2">Personal Project</h3> 
@@ -40,7 +50,7 @@ return (
                 </p>
         </div>  
 
-        <div className="WE-Box" id="WE-Box5">            
+        <div className="WE-Box" id="WE-Box5" data-aos="flip-right" data-aos-delay="300" data-aos-easing="ease-in-out " data-aos-duration="300">            
         <div className="Circle3"></div>
             <div className="Exp-Title3">
                 <h2 id="Exp-Name">Web Developer Intern</h2> <span id="Exp-date">June 2018 to Aug 2018</span>
@@ -51,16 +61,16 @@ return (
         </div>
 
         <div className="WE-Box" id="WE-Box2">
-        <img className="TCS" src={TCS} />
+        <img alt="Image" className="TCS" src={TCS} />
 
         </div>
         <div className="WE-Box" id="WE-Box3">
             <div className="Circle4"></div>
-            <img className="ResLife" src={ResLife} />
+            <img alt="Image" className="ResLife" src={ResLife} />
 
         </div>        
 
-        <div className="WE-Box" id="WE-Box6">
+        <div className="WE-Box" id="WE-Box6" data-aos="flip-left" data-aos-delay="300" data-aos-easing="ease-in-out " data-aos-duration="300">
             <div className="Exp-Title">
                 <h2 id="Exp-Name">IT Support & Desk Assistant</h2> <span id="Exp-date">Jan 2018 to Dec 2018</span>
                 <h3 id="Exp-Name2">University of Southern Mississippi</h3> <span id="Exp-date2">Hattiesburg, MS</span>
@@ -69,7 +79,7 @@ return (
                 </p>
         </div>    
         
-        <div className="WE-Box" id="WE-Box7">            
+        <div className="WE-Box" id="WE-Box7" data-aos="flip-right" data-aos-delay="300" data-aos-easing="ease-in-out " data-aos-duration="300">            
         <div className="Circle5"></div>
             <div className="Exp-Title">
                 <h2 id="Exp-Name">Front End Designer</h2> <span id="Exp-date">May 2016 to Jan 2017</span>
@@ -82,9 +92,11 @@ return (
       </div>
        
         <div className="WE-Box" id="WE-Box">
-        <img className="HC" src={HC} />
+        <img alt="Image" className="HC" src={HC} />
         </div>        
     </div>
+
+    
 </div>)
     }
 

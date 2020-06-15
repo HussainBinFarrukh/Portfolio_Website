@@ -9,6 +9,7 @@ import Grad from '../../../assets/AboutMe pics/graduation.png';
 import SkillBox from '../../../assets/AboutMe pics/skillScene.png';
 import Exp from '../../../assets/AboutMe pics/Exp.png';
 import MyStoryP from '../../../assets/AboutMe pics/pp-black.png';
+import MyStory from './MyStory.js';
 
 
 const AboutMe = () => {
@@ -24,42 +25,50 @@ return (
         <br/>
 
         {/******************Boxes*******************/}
-        <div class="About_Me">
-            <div class="About_Me_Boxes">
-                <div class="container">
-                    <img src={Box1} alt="Avatar"/>
+        <div class="About_Me" >
+            <div class="About_Me_Boxes"            >
+                <div class="container"
+                data-aos="flip-up" data-aos-delay="300" data-aos-easing="ease-in-out " data-aos-duration="20"
+                >
+                    <img alt="Image" src={Box1} alt="Avatar"/>
                     <div class="overlay">
-                    <a class="text">MY STORY<img id="MyStoryP" src={MyStoryP} /></a>
+                    <a class="text" href="#My_Story">MY STORY<img id="MyStoryP" src={MyStoryP} /></a>
                     </div>
                 </div>
-                <div class="container">
-                    <img src={Box2} alt="Avatar" class="image"/>
+
+                <div class="container"
+                data-aos="flip-up" data-aos-delay="600" data-aos-easing="ease-in-out " data-aos-duration="20"                >
+                    <img alt="Image" src={Box2} alt="Avatar" class="image"/>
                     <div class="overlay">
-                        <a class="text">EDUCATION <img id="Grad" src={Grad} /></a>
+                        <a class="text" href="#Edu">EDUCATION <img id="Grad" src={Grad} /></a>
 
 
                     </div>
                 </div>
-                <div class="container">
-                    <img src={Box4} alt="Avatar" class="image"/>
+                <div class="container"
+                data-aos="flip-up" data-aos-delay="900" data-aos-easing="ease-in-out " data-aos-duration="20"
+                >
+                    <img alt="Image" src={Box4} alt="Avatar" class="image"/>
                     <div class="overlay">
-                    <a class="text">SKILLS <img id="SkillBox" src={SkillBox} /></a>
+                    <a class="text" href="#MySkills">SKILLS <img id="SkillBox" src={SkillBox} /></a>
                     </div>
                 </div>
-                <div class="container">
-                    <img src={Box3} alt="Avatar" class="image"/>
+                <div class="container"
+                data-aos="flip-up" data-aos-delay="1200" data-aos-easing="ease-in-out " data-aos-duration="20"
+                >
+                    <img alt="Image" src={Box3} alt="Avatar" class="image"/>
                     <div class="overlay">
-                    <a class="text">EXPERIENCE <img id="ExpBox" src={Exp} /></a>
+                    <a class="text" href="#Exp">EXPERIENCE <img id="ExpBox" src={Exp} /></a>
                     </div>
-                </div>
+                    </div>
+                    <br id="My_Story"/>
+                    
             </div>
        </div>
         {/**************END BOXES**************/}
-        <h1 id="Abt">Hi! I'm Hussain</h1>
-        <p id="para"> <strong id="strong">‟</strong> I have a Bachelor's degree in Computer Science, Class of 2020 from the University of Southern Mississippi with CGPA 3.66. I aspire to become a Full Stack Web developer. 
-        My previous experiences have taught me to leverage technical, analytical, and problem-solving skills to create dynamic, high-speed websites and applications with best code practices.
-        <strong id="strong2">  „</strong>
-        </p>
+
+        <MyStory/>
+        <br id="Edu"/>
 </div>
 </>
 )

@@ -2,26 +2,3 @@
     scroll-behavior: smooth;
 
 }
-
-.SecondPage{
-
-    padding: 0 7% 0 7%;
-    margin: 0;
-}
-.Second-page-button{
-    position: absolute;
-    top:0;
-    font-size: 3em;
-    float: right;
-    bottom: 70px;
-    position: sticky;
-    color: white;
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 0.438);
-}
-
-.Second-page-button a{
-    color: rgb(0, 0, 0);
-    line-height: 0.2em;
-    text-decoration: none;
-}

@@ -6,41 +6,26 @@
     font-family: tttFont;
     src: url('../../../assets/static/Orbitron-Black.ttf');
   }
+  @font-face {
+    font-family: wireoneFont;
+    src: url('../../../assets/WireOne-Regular.ttf');
+  }
 
 .Second-page{
     text-align: center;
     color: rgb(255, 255, 255);
-    background-color: rgba(44, 44, 44, 0.808);
 
 }
-#Abt {
-    color: rgb(255, 255, 255);
-    font-size: 2.5em;
-    padding: 0;
-    font-family: tFont;
-}
-#strong{
-    vertical-align: bottom;
-    font-size: 2em;
-}
-
-#strong2{
-    vertical-align: top;
-    font-size: 2em;
-}
-#para{
-    font-size: 1.5em;
-    padding: 2% 5% 2% 5%;
-    text-align: justify;
-    font-family: tFont;
-}
-
 
 /**********************************************/
 .About_Me{
-    padding: 0% 5% 5% 5%;
+    padding: 0% 3% 3% 3%;
     margin: 0;
     border-top: solid rgba(255, 255, 255, 0.541) 5px;
+    background-color: rgba(44, 44, 44, 0.555);
+    border-bottom: solid rgba(255, 255, 255, 0.541) 5px;
+
+
     
 
 }
@@ -87,12 +72,9 @@
 
   }
   
-.text a{
-    color: #ffffff;
-    position: absolute;
-    text-decoration: none;
-}
 .text{
+    color: #ffffff;
+    text-decoration: none;
     font-family: ttFont;
     font-size: 2em;
     line-height: 1;
@@ -101,7 +83,7 @@
 .About_Me_Boxes{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 3%  0% 5% 0%;
+    padding: 3%  0% 0% 0%;
 }
 
 .About_Me_Boxes img{

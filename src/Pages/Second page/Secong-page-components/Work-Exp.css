@@ -1,11 +1,12 @@
 
 .WEX{
     transform: scale(0.8);
-
+    padding: 0 5% 0 5%;
+    width: 100%;
 }
 .W-E{
     text-align: center;
-    padding: 5% 0% 5% 0%;
+    padding: 0% 0% 2% 0%;
     color: rgb(229, 233, 173);
     font-size: 3em;
     font-family: ttFont;
@@ -14,7 +15,7 @@
 .workExp { 
     text-align: center;
     margin: 0 0% 0 0%;
-    padding: 0% 0% 20% 0%;
+    padding: 0% 0% 0% 0%;
     color: rgb(240, 176, 116);
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -23,6 +24,7 @@
 
 
 .WE-Box{
+    margin-top: 10%;
     height: 55vh;
     width: 45vw;
     padding-right: 0%;
@@ -35,8 +37,9 @@
     height: 50vh;
 }
 #WE-Box1:hover{
-    background-color: blanchedalmond;
-    transform: scale(1.01);
+    background-color: rgba(255, 235, 205, 0.438);
+    color: white;
+ 
 }
 #WE-Box3{
     border-right:  solid    white 8px;
@@ -47,24 +50,30 @@
     width: 45vw;
 }
 #WE-Box4:hover{
-    background-color: blanchedalmond;
-    transform: scale(1.01);
+ 
+    background-color: rgba(255, 235, 205, 0.438);
+    color: white;
+  
 }
 #WE-Box5{
     border-right: solid white 8px;
     height: 67vh;
 }
 #WE-Box5:hover{
-    background-color: blanchedalmond;
-    transform: scale(1.01);
+ 
+    background-color: rgba(255, 235, 205, 0.438);
+    color: white;
+  
 }
 #WE-Box6{
     padding-top: 5%;
 }
 
 #WE-Box6:hover{
-    background-color: blanchedalmond;
-    transform: scale(1.01);
+ 
+    background-color: rgba(255, 235, 205, 0.438);
+    color: white;
+  
 }
 #WE-Box7{
     border-right:  solid    white 8px;
@@ -72,8 +81,10 @@
 }
 #WE-Box7:hover{
 
-    background-color: blanchedalmond;
-    transform: scale(1.01);
+ 
+    background-color: rgba(255, 235, 205, 0.438);
+    color: white;
+  
 }
 
 #Exp-Name{
@@ -221,4 +232,32 @@
     padding: 10px;
     border-radius: 50%;
     background-color: rgb(41, 40, 40);
+}
+
+.Download{
+    margin: 2% 2% 20% 41%;
+    display: inline;
+}
+#Download{
+	padding: 1%;
+	background-color: rgba(65, 64, 64, 0.925);
+	text-decoration: none;
+	font-size: 2em;
+	color: rgb(227, 233, 233);
+}
+#DownloadLogo{
+	width: 3%;
+	vertical-align: top;
+}
+#Download:hover {
+	padding: 1.2%;
+	background-color: rgba(255, 255, 255, 0.925);
+	text-decoration: none;
+	font-size: 2em;
+	color: rgb(0, 0, 0);
+}
+.DownloadText{
+	text-align: center;
+	padding: 1% 0% 3% 3%;
+	font-size: 0.8em;
 }

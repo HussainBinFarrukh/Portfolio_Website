@@ -1,0 +1,65 @@
+.MyStory{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgba(10, 10, 10, 0.397);
+    backdrop-filter: blur(5px);
+    
+}
+.MyStoryImg{
+    overflow: hidden;
+    height: 89vh;
+
+}
+#MyStoryImg{
+    width: 130%;
+}
+
+
+#para{
+    font-size: 1.1em;
+    padding: 0% 2% 1% 2%;
+    text-align: justify;
+    color: cadetblue;
+}
+#par{
+    padding: 3% 3% 3% 3%;
+    font-size: 1.5em;
+    color: white;
+    backdrop-filter: blur(50px);
+    color: cadetblue;
+    font-family: tFont;
+
+}
+
+#Abt1 {
+    color: rgb(100, 92, 92);
+    font-size: 1.5em;
+    padding: 0% 0 3% 3%;
+    font-family: ttFont;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+}
+
+
+#Abt {
+    color: rgb(100, 92, 92);
+    font-size: 1.5em;
+    padding: 0% 0 0 0;
+    font-family: ttFont;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+}
+#strong{
+    vertical-align: bottom;
+    font-size: 2em;
+}
+
+#strong2{
+    font-size: 2em;
+    vertical-align: top;
+}
+
+.RightSide{
+    background-color: rgba(22, 22, 22, 0.527);
+    padding-top: 5%;
+}

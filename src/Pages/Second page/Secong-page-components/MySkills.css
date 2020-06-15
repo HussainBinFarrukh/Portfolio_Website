@@ -1,7 +1,3 @@
-@font-face {
-    font-family: tFont;
-    src: url('../../../assets/static/Orbitron-Regular.ttf');
-  }
 
   @font-face {
     font-family: wireoneFont;
@@ -9,7 +5,7 @@
   }
 .Skill-Sec{
     text-align: center;
-    padding: 0% 0% 5% 0%;
+    padding: 0% 0% 0% 0%;
     color: rgb(255, 255, 255);
 }
 

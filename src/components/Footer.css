@@ -1,0 +1,166 @@
+.Footer{
+    color: rgb(255, 255, 255); 
+    background-color: rgba(88, 79, 61, 0.425);
+    text-align: center; 
+	padding: 1% 0 1% 0; 
+	backdrop-filter: blur(10px);
+
+}
+
+#Copyright{
+    padding-top: 3%;
+    text-align: center; 
+    font-size: 1.2em;
+    letter-spacing: 7px;
+}
+
+
+.Second-page-button{
+    position: absolute;
+    top:0;
+    font-size: 3em;
+    float: right;
+    bottom: 80px;
+    position: sticky;
+    color: white;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.438);
+    }
+
+.Second-page-button a{
+    color: rgb(0, 0, 0);
+    line-height: 0em;
+    text-decoration: none;
+    }
+    
+    body {
+		height: 100%;
+		background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/50598/concrete-wall-background.jpg) center center fixed;
+		background-size: cover;
+}
+
+.Contact-Container{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+}
+
+
+
+#S-Logo{
+    width: 3%;
+    margin: 2% 1% 1% 0%;
+    background-color: white;
+    border: solid white 2px;
+    border-radius: 50%;
+
+    
+}
+
+.L-I-Box{
+	margin: 15% 0% 0% 0%;
+}
+
+.LI-profile-badge{
+    transform: scale(1.1);
+}
+
+.Social{
+	margin-left: 2%;
+}
+
+
+/*****************************************/
+.shade {
+		transform: scale(0.7);
+		margin-right: 0%;
+
+}
+
+.blackboard {
+		width: 700px;
+		border: tan solid 12px;
+		border-top: #bda27e solid 12px;
+		border-left: #b19876 solid 12px;
+		border-bottom: #c9ad86 solid 12px;
+		box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+		background-color: #333;
+}
+
+.blackboard:before {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
+		border: #2c2c2c solid 2px;
+		content: "Contact Us";
+		font-family: 'Permanent Marker', cursive;
+		font-size: 2.2em;
+		color: rgba(238, 238, 238, 0.7);
+		text-align: center;
+		padding-top: 0px;
+}
+
+.form {
+		padding: 0px 20px 20px;
+}
+
+.form p {
+		margin-bottom: 0em;
+}
+
+label {
+		vertical-align: middle;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 1.6em;
+		color: rgba(238, 238, 238, 0.7);
+}
+
+p:nth-of-type(5) > label {
+        vertical-align: top;
+        margin-right: 12%;
+}
+
+input,
+textarea {
+		vertical-align: middle;
+		padding-left: 10px;
+		background: none;
+		border: none;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 1.6em;
+		color: rgba(238, 238, 238, 0.8);
+		line-height: .6em;
+		outline: none;
+}
+
+textarea {
+		height: 120px;
+		font-size: 1.4em;
+		line-height: 1em;
+		resize: none;
+}
+
+input[type="submit"] {
+		cursor: pointer;
+		color: rgba(238, 238, 238, 0.7);
+		line-height: 1em;
+		padding: 0;
+}
+
+input[type="submit"]:focus {
+		background: rgba(238, 238, 238, 0.2);
+		color: rgba(238, 238, 238, 0.2);
+}
+
+::-moz-selection {
+		background: rgba(238, 238, 238, 0.2);
+		color: rgba(238, 238, 238, 0.2);
+		text-shadow: none;
+}
+
+::selection {
+		background: rgba(238, 238, 238, 0.4);
+		color: rgba(238, 238, 238, 0.3);
+		text-shadow: none;
+}

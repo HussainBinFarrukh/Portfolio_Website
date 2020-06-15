@@ -6,26 +6,40 @@ import CAMLOGO from './../../../assets/AboutMe pics/CamLogo.png';
 const EducationComp = () => {
 
 return(
-<div className="EducationSec">
+<div className="EducationSec" >
     <h1 id="EduTitle">EDUCATION</h1>
     <div className="USMInfo">
         <div>
-            <img id="USMLOGO" src={USMLOGO}/>
+            <img alt="logo" id="USMLOGO" src={USMLOGO}/>
         </div>
         <div className="USMInfoText">
-            <p>Minim nulla ad officia dolor. Dolore do consectetur cillum minim consectetur velit pariatur enim ea excepteur reprehenderit esse nostrud minim. Ut duis excepteur tempor ipsum pariatur magna anim deserunt incididunt consectetur. Veniam nostrud mollit dolor laborum consequat proident ullamco qui labore enim dolor. Ea aliquip consequat exercitation aliqua laborum est cupidatat. Ipsum consequat aliqua non labore in anim.
-                    Nulla consequat aliquip proident consectetur et sit nulla est deserunt amet excepteur duis anim ullamco. Culpa ad pariatur consectetur amet ipsum excepteur adipisicing pariatur. Sit duis proident labore irure do veniam deserunt deserunt consequat voluptate dolor. Enim sit exercitation ad excepteur minim non non. Aliqua cillum anim non nulla. </p>
+            <ul id="USM-T">
+                <li id="USM-T-L">UNIVERSITY OF SOUTHERN MISSISSIPPI</li>
+                <li id="USM-T-L-S">Aug 2016 to May 2020</li>
+                <li id="USM-T-L2">Bachelor of Science (Computer Science)	</li>
+                <li id="USM-T-L-S">Hattiesburg, MS</li>
+                <li id="USM-T-L3">GPA 3.67</li>
+            </ul>
+            <p id="USM-p1">Southern Miss was a truly invaluable experience in my journey. My professors and peers challenged my skills and motivated me to grow through class projects and coding competitions. My involvement in USM's tech-related initiatives disciplined my inventive muscle, sparked my fascination with web development, and increased my endurance to adversity. Over these past four years, my love for computer science has only developed stronger through rigorous study of its nuts and bolts.
+            </p>
         </div>
     </div>
 
     <div className="CAMInfo">
         <div>
-            <img id="CAMLOGO" src={CAMLOGO}/>
+            <img alt="logo" id="CAMLOGO" src={CAMLOGO}/>
         </div>
-        <div className="CAMInfoText">
-            <p>Minim nulla ad officia dolor. Dolore do consectetur cillum minim consectetur velit pariatur enim ea excepteur reprehenderit esse nostrud minim. Ut duis excepteur tempor ipsum pariatur magna anim deserunt incididunt consectetur. Veniam nostrud mollit dolor laborum consequat proident ullamco qui labore enim dolor. Ea aliquip consequat exercitation aliqua laborum est cupidatat. Ipsum consequat aliqua non labore in anim.
-                    Nulla consequat aliquip proident consectetur et sit nulla est deserunt amet excepteur duis anim ullamco. Culpa ad pariatur consectetur amet ipsum excepteur adipisicing pariatur. Sit duis proident labore irure do veniam deserunt deserunt consequat voluptate dolor. Enim sit exercitation ad excepteur minim non non. Aliqua cillum anim non nulla. </p>
-        </div>
+        <div className="USMInfoText">
+        <ul id="CAM-T">
+            <li id="CAM-T-L">ROOTS IVY INTERNATIONAL</li>
+            <li id="CAM-T-L-S">Aug 2014 to May 2016</li>
+            <li id="CAM-T-L2">A level (Physics, Mathematics, Computer Science)</li>
+            <li id="CAM-T-L-S">Faisalabad, Pakistan</li>
+            <li id="CAM-T-L3">GPA 3.8</li>
+        </ul>
+        <p id="CAM-p1">City School showed me what I was passionate about and gifted me with a desire for knowledge. My time in the student council holding annual events helped me polish my organizational skills. My experience heading the science society showed me the qualities of a great leader stretched my comfort zone.	
+        </p>
+    </div>
     </div>
 
 

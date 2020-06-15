@@ -4,22 +4,17 @@ import AboutMe from './Secong-page-components/AboutMe';
 import MySkills from './Secong-page-components/MySkills';
 import WorkExp from './Secong-page-components/Work-Expereice';
 import EducationComp from './Secong-page-components/Education.jsx';
+import Footer from '../../components/Footer';
 
-const SecondPage = () => {
-    
- 
-
-return(
+const SecondPage = () => ( 
 <div className="SecondPage">
     <AboutMe/>
     <EducationComp/>
     <MySkills/>
     <WorkExp/>
+    <Footer/>
 
-    <div className="Second-page-button">  
-    <a  href="#myVideo"> ⬆ </a> 
-    </div>          
+
 </div>
-);}
-
+);
 export default SecondPage;
