@@ -11,12 +11,12 @@ import linkedin from '../assets/Social/linkedin.png';
 const Footer = () => (
 <>     
 
-    <div  id="Contact-page" className="Second-page-button">  
+    <div   className="Second-page-button">  
        <a  href="#myVideo"> ⬆ </a> 
     </div>  
         
 
-    <div className="Footer">   
+    <div id="Contact-page" className="Footer">   
       
         <div className="Contact-Container">
         <div class="shade">
