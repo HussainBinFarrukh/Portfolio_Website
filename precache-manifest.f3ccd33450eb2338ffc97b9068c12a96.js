@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4a44363c75f2f260a852aed10b77c418",
+    "revision": "cf5be73e33b8c93615c3015911ce3fbc",
     "url": "/Portfolio_Website/index.html"
   },
   {
-    "revision": "52495d362b9d56c18bb5",
+    "revision": "01507c0c62c146fdb17c",
     "url": "/Portfolio_Website/static/css/2.eb43dee1.chunk.css"
   },
   {
-    "revision": "432d0c783990a4469ec8",
-    "url": "/Portfolio_Website/static/css/main.e9eadf41.chunk.css"
+    "revision": "ebdb82f719268f537af1",
+    "url": "/Portfolio_Website/static/css/main.113f0332.chunk.css"
   },
   {
-    "revision": "52495d362b9d56c18bb5",
-    "url": "/Portfolio_Website/static/js/2.714adb2c.chunk.js"
+    "revision": "01507c0c62c146fdb17c",
+    "url": "/Portfolio_Website/static/js/2.32bbae22.chunk.js"
   },
   {
     "revision": "4ba1a1c11c57ed15aa68008707a3d6b4",
-    "url": "/Portfolio_Website/static/js/2.714adb2c.chunk.js.LICENSE.txt"
+    "url": "/Portfolio_Website/static/js/2.32bbae22.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "432d0c783990a4469ec8",
-    "url": "/Portfolio_Website/static/js/main.ebd6d4b9.chunk.js"
+    "revision": "ebdb82f719268f537af1",
+    "url": "/Portfolio_Website/static/js/main.b6eef7af.chunk.js"
   },
   {
     "revision": "ff8612186abc71f6345f",
@@ -40,8 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio_Website/static/media/HC1.aa261111.jpg"
   },
   {
-    "revision": "42f88763b41bddf9e9e3a62583a6d02a",
-    "url": "/Portfolio_Website/static/media/IMG_20180316_161650.42f88763.jpg"
+    "revision": "f4d69b4cc4df69d69897571b86b8b26e",
+    "url": "/Portfolio_Website/static/media/HussainBinFarrukh_Resume.f4d69b4c.pdf"
+  },
+  {
+    "revision": "672fa57dfb68dd3e9a8539b6c4f658cb",
+    "url": "/Portfolio_Website/static/media/IMG_20180316_1616501.672fa57d.jpg"
   },
   {
     "revision": "c5897341462fb76703966c6435d793e1",
@@ -60,10 +64,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio_Website/static/media/ResLife.766571ca.jpg"
   },
   {
-    "revision": "3e938793a46dac78564aeb2f61a98b24",
-    "url": "/Portfolio_Website/static/media/Resume.3e938793.pdf"
-  },
-  {
     "revision": "5e568326c94ff01ddf261722defc5318",
     "url": "/Portfolio_Website/static/media/TCS.5e568326.png"
   },
@@ -80,16 +80,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio_Website/static/media/WireOne-Regular.7d6b9f05.ttf"
   },
   {
-    "revision": "081766504ac1f7096b1233bc2b501c23",
-    "url": "/Portfolio_Website/static/media/bg.08176650.jpg"
+    "revision": "ff98951548e7695abca562b320ce929d",
+    "url": "/Portfolio_Website/static/media/bg1.ff989515.jpg"
   },
   {
-    "revision": "59501a16841fe384dab1bb179aecc9d6",
-    "url": "/Portfolio_Website/static/media/box1.59501a16.JPG"
+    "revision": "51d8ff282fa68d93ea8f5827056b8cd3",
+    "url": "/Portfolio_Website/static/media/box1_b.51d8ff28.jpg"
   },
   {
-    "revision": "39c234dba3f12303989ecb923b1d2c3a",
-    "url": "/Portfolio_Website/static/media/box2.39c234db.jpg"
+    "revision": "26ad2a8fe90fb511fa6230b45680f10f",
+    "url": "/Portfolio_Website/static/media/box1_c.26ad2a8f.jpg"
+  },
+  {
+    "revision": "47f8ac828c6a8baa05b724b8e670e892",
+    "url": "/Portfolio_Website/static/media/box2.47f8ac82.jpg"
   },
   {
     "revision": "da0f54c816b66dfdb40cdb395088f7d6",
@@ -112,19 +116,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio_Website/static/media/instagram.5c570427.png"
   },
   {
-    "revision": "5d74411e1d306beb27e0124c914e2d34",
-    "url": "/Portfolio_Website/static/media/pp-black.5d74411e.png"
-  },
-  {
     "revision": "974c0881ad1b10ced9b70e45b02eaeab",
     "url": "/Portfolio_Website/static/media/sig-white.974c0881.png"
+  },
+  {
+    "revision": "bf5050893c151e7eb47ad225d7da5341",
+    "url": "/Portfolio_Website/static/media/sig.bf505089.png"
   },
   {
     "revision": "5a834784b4302d40db9aaf9297c10bd7",
     "url": "/Portfolio_Website/static/media/skillScene.5a834784.png"
   },
   {
-    "revision": "680181a6940ea2a806d29ac9b5d8242f",
-    "url": "/Portfolio_Website/static/media/vid5.680181a6.mp4"
+    "revision": "8299d1a9399d3b21f46ad6db15007f5c",
+    "url": "/Portfolio_Website/static/media/vid6.8299d1a9.mp4"
   }
 ]);
