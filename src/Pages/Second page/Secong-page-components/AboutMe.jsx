@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
-import Box1 from '../../../assets/AboutMe pics/box1.JPG';
+import Box1 from '../../../assets/AboutMe pics/box1_b.jpg';
 import Box2 from '../../../assets/AboutMe pics/box2.jpg';
 import Box3 from '../../../assets/AboutMe pics/box3.jpg';
 import Box4 from '../../../assets/AboutMe pics/box4.jpg';
@@ -8,7 +8,7 @@ import Box4 from '../../../assets/AboutMe pics/box4.jpg';
 import Grad from '../../../assets/AboutMe pics/graduation.png';
 import SkillBox from '../../../assets/AboutMe pics/skillScene.png';
 import Exp from '../../../assets/AboutMe pics/Exp.png';
-import MyStoryP from '../../../assets/AboutMe pics/pp-black.png';
+import MyStoryP from '../../../assets/AboutMe pics/box1_c.jpg';
 import MyStory from './MyStory.js';
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './MyStory.css'
-import MyStoryImg from '../../../assets/try/IMG_20180316_161650.jpg';
+import MyStoryImg from '../../../assets/try/IMG_20180316_1616501.jpg';
 
 const MyStory = () => (
 <>

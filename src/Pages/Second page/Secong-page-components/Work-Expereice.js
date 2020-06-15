@@ -5,7 +5,7 @@ import PPB from '../../../assets/AboutMe pics/PBBbcode.3a850139.gif';
 import TCS from '../../../assets/AboutMe pics/TCS.png';
 import ResLife from '../../../assets/AboutMe pics/ResLife.jpg';
 import HC from '../../../assets/AboutMe pics/HC1.jpg';
-import Resume from '../../../assets/Resume.pdf';
+import Resume from '../../../assets/HussainBinFarrukh_Resume.pdf';
 import DownloadIcon from '../../../assets/Social/download.png';
 
 const WorkExp = () => {
@@ -18,7 +18,7 @@ return (
 <br/>
       <h1 className="W-E">WORK EXPERIENCE</h1>
       
-<div className="Download"><a id="Download" href={Resume}><img alt="Image" id="DownloadLogo" src={DownloadIcon}/> My Resume</a>
+<div className="Download"><a id="Download" href={Resume} target="_blank"><img alt="Image" id="DownloadLogo" src={DownloadIcon}/> My Resume</a>
 </div>
     <div className="workExp">
 
@@ -70,7 +70,7 @@ return (
 
         </div>        
 
-        <div className="WE-Box" id="WE-Box6" data-aos="flip-left" data-aos-delay="300" data-aos-easing="ease-in-out " data-aos-duration="300">
+        <div className="WE-Box" id="WE-Box6" data-aos="flip-left" data-aos-delay="100" data-aos-easing="ease-in-out " data-aos-duration="300">
             <div className="Exp-Title">
                 <h2 id="Exp-Name">IT Support & Desk Assistant</h2> <span id="Exp-date">Jan 2018 to Dec 2018</span>
                 <h3 id="Exp-Name2">University of Southern Mississippi</h3> <span id="Exp-date2">Hattiesburg, MS</span>
@@ -79,7 +79,7 @@ return (
                 </p>
         </div>    
         
-        <div className="WE-Box" id="WE-Box7" data-aos="flip-right" data-aos-delay="300" data-aos-easing="ease-in-out " data-aos-duration="300">            
+        <div className="WE-Box" id="WE-Box7" data-aos="flip-right" data-aos-delay="100" data-aos-easing="ease-in-out " data-aos-duration="300">            
         <div className="Circle5"></div>
             <div className="Exp-Title">
                 <h2 id="Exp-Name">Front End Designer</h2> <span id="Exp-date">May 2016 to Jan 2017</span>

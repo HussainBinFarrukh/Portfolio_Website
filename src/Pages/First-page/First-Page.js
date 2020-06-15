@@ -1,6 +1,6 @@
 import React from 'react';
 import './First-Page.css';
-import Vid from '../../assets/vid5.mp4'
+import Vid from '../../assets/vid6.mp4'
 
 
 const FirstPage = () => (  

@@ -37,7 +37,7 @@ return(
             <li id="CAM-T-L-S">Faisalabad, Pakistan</li>
             <li id="CAM-T-L3">GPA 3.8</li>
         </ul>
-        <p id="CAM-p1">City School showed me what I was passionate about and gifted me with a desire for knowledge. My time in the student council holding annual events helped me polish my organizational skills. My experience heading the science society showed me the qualities of a great leader stretched my comfort zone.	
+        <p id="CAM-p1">Roots Ivy showed me what I was passionate about and gifted me with a desire for knowledge. My time in the student council holding annual events helped me polish my organizational skills. My experience heading the science society showed me the qualities of a great leader and stretched my comfort zone.	
         </p>
     </div>
     </div>

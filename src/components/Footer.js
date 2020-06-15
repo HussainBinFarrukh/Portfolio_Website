@@ -5,6 +5,7 @@ import Insta from '../assets/Social/instagram.png';
 import Discord from '../assets/Social/discord.png';
 import GitHub from '../assets/Social/git.png';
 import linkedin from '../assets/Social/linkedin.png';
+import Sigi from '../assets/sig.png';
 
 
 
@@ -19,38 +20,25 @@ const Footer = () => (
     <div id="Contact-page" className="Footer">   
       
         <div className="Contact-Container">
-        <div class="shade">
-      <div class="blackboard">
-          <div class="form">
-              <p>
-                  <label>Name: </label>
-                  <input type="text" />
-              </p>
-              <p>
-                  <label>Email: </label>
-                  <input type="text" />
-              </p>
-              <p>
-                  <label>Phone: </label>
-                  <input type="tel" />
-              </p>
-              <p>
-                  <label>Subject: </label>
-                  <input type="text" />
-              </p>
-              <p>
-                  <label>Message: </label>
-                  <textarea></textarea>
-              </p>
-              <p class="wipeout">
-                  <input type="submit" value="Send" />
-              </p>
-            </div>
-        </div>
-    </div>    
+           <div class="shade">
+                 <div class="blackboard">
+                    <div class="form">
+                    <p id="C-M-T"> 
+                        <label > Contact Me </label>
+                    </p>
+                    <p>
+                        <label>Email: hussain.13@live.com</label>
+                    </p>
+                    <p>
+                        <label>Phone: +1 (601)-549-5317</label>
+                    </p>
+                    <img id="Sigi" src={Sigi} alt="sig"/>
+                    </div>
+                </div>
+            </div>    
 
            <div className="L-I-Box">
-                <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="hussain-bin-farrukh"><a class="LI-simple-link" href='https://www.linkedin.com/in/hussain-bin-farrukh?trk=profile-badge'>Hussain Bin Farrukh</a></div>
+                <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="hussain-bin-farrukh"><a class="LI-simple-link" href='https://www.linkedin.com/in/hussain-bin-farrukh?trk=profile-badge' target="_blank">Hussain Bin Farrukh</a></div>
             </div>
         </div>
 
