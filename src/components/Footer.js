@@ -12,7 +12,7 @@ import Sigi from '../assets/sig.png';
 const Footer = () => (
 <>     
 
-    <div   className="Second-page-button">  
+    <div className="Second-page-button">  
        <a  href="#myVideo"> ⬆ </a> 
     </div>  
         
