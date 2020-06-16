@@ -1,68 +1,140 @@
-.header {
-  height: 100px;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  backdrop-filter: blur(100px);
-  background: rgb(2,0,36);
-  background: rgb(8,8,10);
-  background: rgb(8,8,10);
-  background: radial-gradient(circle, rgba(8,8,10,1) 60%, rgba(40,55,80,1) 100%);  position: fixed;
-  z-index:2; 
-  top: 0;
 
-}
-
-.Name{
-  text-align: center;
-  font-family: ttFont;
-  letter-spacing: 8px;
-  margin-top: 35px;
-  font-size:  1.8vw;
-  color: rgb(255, 255, 255);
-  line-height: 150%;
-}
-.logo-container {
-  margin-left: 30px;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  overflow: hidden;
-}
-
-.logo-container1 {
-  margin-left: 30px;
-  height: 110px;
-  width: 180px;
-  overflow: hidden;
-}
-
-  .options {
-    height: 100%;
+@media only screen and (max-width: 700px) {
+  .header {
+    height: 100px;
+    width: 100vw;
     display: flex;
-    align-items: center;
-    margin-left: 200px;
+    justify-content: space-between;
+    backdrop-filter: blur(100px);
+    background: rgb(2,0,36);
+    background: rgb(8,8,10);
+    background: rgb(8,8,10);
+    background: radial-gradient(circle, rgba(8,8,10,1) 60%, rgba(40,55,80,1) 100%);  position: fixed;
+    z-index:2; 
+    top: 0;
+  
   }
-
-
-.option{
-  align-content: flex-end;
-  color: white;
-  text-align: center;  
-  padding: 40px 40px;
-  font-size: 1.5vw;
-  font-weight: 900;
-  text-decoration: none;
-  overflow: hidden;
-  font-family: tFont;
-
-
+  
+  .Name{
+    text-align: center;
+    font-family: ttFont;
+    padding-top: 7%;
+    font-size:  3vw;
+    color: rgb(255, 255, 255);
+    line-height: 150%;
+  }
+  .logo-container {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+  }
+  
+  .logo-container1 {
+    display: none;
+  }
+  
+    .options {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  
+  
+  .option{
+    align-content: flex-end;
+    color: white;
+    text-align: center;  
+    padding: 20px 20px;
+    font-size: 2.7vw;
+    font-weight: 900;
+    text-decoration: none;
+    overflow: hidden;
+    font-family: tFont;
+  
+  
+  }
+  .option:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 40px 40px;
+    overflow: hidden;
+    border-radius: 1%;
+    transition: 0.6ms ease;
+  }
+  
+  
 }
-.option:hover {
-  background-color: rgb(255, 255, 255);
-  color: #000000;
-  padding: 40px 40px;
-  overflow: hidden;
-  border-radius: 1%;
-  transition: 0.6ms ease;
+
+@media only screen and (min-width: 700px) {
+  .header {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(100px);
+    background: rgb(2,0,36);
+    background: rgb(8,8,10);
+    background: rgb(8,8,10);
+    background: radial-gradient(circle, rgba(8,8,10,1) 60%, rgba(40,55,80,1) 100%);  position: fixed;
+    z-index:2; 
+    top: 0;
+  
+  }
+  
+  .Name{
+    text-align: center;
+    font-family: ttFont;
+    letter-spacing: 8px;
+    margin-top: 35px;
+    font-size:  1.8vw;
+    color: rgb(255, 255, 255);
+    line-height: 150%;
+  }
+  .logo-container {
+    margin-left: 30px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+  }
+  
+  .logo-container1 {
+    margin-left: 30px;
+    height: 110px;
+    width: 180px;
+    overflow: hidden;
+  }
+  
+    .options {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: 200px;
+    }
+  
+  
+  .option{
+    align-content: flex-end;
+    color: white;
+    text-align: center;  
+    padding: 40px 40px;
+    font-size: 1.5vw;
+    font-weight: 900;
+    text-decoration: none;
+    overflow: hidden;
+    font-family: tFont;
+  
+  
+  }
+  .option:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 40px 40px;
+    overflow: hidden;
+    border-radius: 1%;
+    transition: 0.6ms ease;
+  }
+  
+  
 }

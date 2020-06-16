@@ -1,3 +1,7 @@
+
+@media only screen and (min-width: 700px) {
+
+
 .Footer{
     color: rgb(255, 255, 255); 
     background-color: rgba(88, 79, 61, 0.425);
@@ -110,3 +114,156 @@ label {
 		font-size: 1.6em;
 		color: rgba(238, 238, 238, 0.7);
 }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+    .Footer{
+        color: rgb(255, 255, 255); 
+        background-color: rgba(88, 79, 61, 0.425);
+        text-align: center; 
+        padding: 1% 0   0% 0; 
+        backdrop-filter: blur(10px);
+    
+    }
+    
+    .CopyR{
+
+        background-color: black;
+    }
+
+    #Copyright{
+        padding-top: 3%;
+        padding-left: 9vw;
+        text-align: center; 
+        font-size: 0.8em;
+        letter-spacing: 7px;
+    }
+    
+    
+    .Second-page-button{
+        position: absolute;
+        top:0;
+        font-size: 2em;
+        float: right;
+        bottom: 80px;
+        position: sticky;
+        color: white;
+        padding: 2px;
+        background-color: rgba(255, 255, 255, 0.438);
+        text-decoration: none;
+
+        }
+    
+    .Second-page-button a{
+        color: rgb(0, 0, 0);
+        line-height: 0em;
+        text-decoration: none;
+        }
+        
+
+    .Contact-Container{
+    }
+    
+    
+    
+    #S-Logo{
+        width: 5%;
+        margin: 2% 1% 1% 0%;
+        background-color: white;
+        border: solid white 2px;
+        border-radius: 50%;
+    
+        
+    }
+    
+    #Sigi{
+        padding: 2% 0% 0% 0%;
+        width: 40%;
+    }
+    
+    .L-I-Box{
+        display: none;
+    }
+    
+
+    .Social{
+        margin-left: 2%;
+    }
+    
+    
+    /*****************************************/
+    .shade {
+            transform: scale(0.7);
+            margin-top: 0%;
+    
+    }
+    
+    .blackboard {
+            margin-left: 8vw;
+            width: 80%;
+            border: tan solid 12px;
+            border-top: #bda27e solid 12px;
+            border-left: #b19876 solid 12px;
+            border-bottom: #c9ad86 solid 12px;
+            box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+            background-color: #333;
+    }
+    #C-M-T{
+        font-size: 1.2em;
+        padding: 2%;
+        text-decoration: underline ;
+    }
+    
+    .form {
+            padding: 5% 20px 5% 0;
+    }
+    
+    .form p {
+            margin-bottom: 0em;
+    }
+    
+    label {
+            vertical-align: bottom;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 0.6em;
+            color: rgba(238, 238, 238, 0.7);
+    }
+    
+}    

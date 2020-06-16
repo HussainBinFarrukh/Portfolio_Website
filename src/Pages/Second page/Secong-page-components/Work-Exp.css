@@ -1,4 +1,7 @@
 
+@media only screen and (min-width: 700px) {
+
+
 .WEX{
     transform: scale(0.8);
     padding: 0 5% 0 5%;
@@ -260,4 +263,307 @@
 	text-align: center;
 	padding: 1% 0% 3% 3%;
 	font-size: 0.8em;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+    
+.WEX{
+    margin: 0;
+    padding: 0;
+}
+
+.W-E{
+    text-align: center;
+    padding: 0% 0% 2% 0%;
+    color: rgb(229, 233, 173);
+    font-size: 1.5em;
+    font-family: ttFont;
+}
+
+.workExp { 
+    text-align: center;
+    margin: 10% 0% 0 0%;
+    padding: 0% 0% 0% 0%;
+    color: rgb(240, 176, 116);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+
+.WE-Box{
+    margin: 0%;
+    height: 55vh;
+    width: 50vw;
+    padding: 0%;
+}
+#WE-Box1{
+    border-right: solid white 1vw;
+    height: 35vh;
+}
+
+
+#WE-Box1-2{
+    padding-top: 15%;
+    height: 32vh;
+}
+#WE-Box1:hover{
+    background-color: rgba(255, 235, 205, 0.438);
+    color: white;
+ 
+}
+
+#WE-Box2{
+    height: 48vh;
+    width: 49vw;
+}
+#WE-Box3{
+    height: 32vh;
+    border-right: solid white 1vw;
+}
+
+#WE-Box3_2{
+    height: 48vh;
+    width: 50vw;
+    border-right: solid white 1vw;
+
+}
+
+#WE-Box4{
+    padding: 15% 0% 5% 1%;
+    height: 32vh;
+    width: 49vw;
+}
+#WE-Box4:hover{
+ 
+    background-color: rgba(255, 235, 205, 0.438);
+    color: white;
+  
+}
+#WE-Box5{
+    border-right: solid white 1vw;
+    height: 50vh;
+    width: 50vw;
+}
+#WE-Box5:hover{
+ 
+    background-color: rgba(255, 235, 205, 0.438);
+    color: white;
+  
+}
+#WE-Box6{
+    margin-top: 15%;
+    padding-top: 5%;
+    height: 38vh;
+    width: 49vw;
+}
+
+#WE-Box6:hover{
+ 
+    background-color: rgba(255, 235, 205, 0.438);
+    color: white;
+  
+}
+#WE-Box7{
+    border-right: solid white 1vw;
+    height: 48vh;
+    width: 50vw;
+}
+#WE-Box7:hover{
+
+ 
+    background-color: rgba(255, 235, 205, 0.438);
+    color: white;
+  
+}
+
+#Exp-Name{
+     font-size: 0.7em;
+     font-family: ttFont;
+
+}
+#Exp-date{
+    line-height: 1;
+    font-size: 0.5em;
+    text-align: end;    
+    
+}
+#Exp-Name2{
+    font-size: 0.6em;
+}
+#Exp-date2{
+    line-height: 1;
+    font-size: 0.5em;
+    text-align: end;    
+
+}
+
+
+#Exp-text{
+    padding: 2% 5% 5%  3%;
+    text-align: justify;
+    line-height: 2;
+    font-size: 0.6em;
+    font-style: italic  ;
+    background-color: rgb(78, 75, 75);    
+
+}
+
+#Exp-text2{
+    padding: 2% 5% 1%  3%;
+    text-align: justify;
+    line-height: 2;
+    font-size: 0.6em;
+    font-style: italic  ;
+    background-color: rgb(78, 75, 75);    
+}
+
+.Exp-Title{
+    background-color: rgba(54, 54, 54, 0.719);    
+    padding: 3% 0 3% 2%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: left;
+}
+
+
+.Exp-Title3{
+    background-color: rgba(54, 54, 54, 0.719);    
+    padding: 3% 0 3% 1%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: left;
+}
+
+.TrioSSS{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 25%;
+}
+.PBB{
+    width: 90%;
+    margin-top: 25%;
+    border: solid 2px wheat;
+}
+
+.TCS{
+    width: 60%;
+    margin-top: 35%;
+}
+
+
+.ResLife{
+    width: 70%;
+    margin-top: 30%;
+}
+
+.HC{
+    width: 90%;
+    margin-top: 40%;
+}
+
+
+/********* Circles *******/
+
+.Circle1{
+    margin-left: 94%;
+    border: solid white 3px;
+    padding: 11px;
+    border-radius: 50%;
+    position: static;
+    background-color: rgb(39, 38, 38);
+}
+.Circle2{
+    margin-left: 94%;
+    border: solid white 3px;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: rgb(41, 40, 40);
+}
+.Circle3{
+    margin-left: 94%;
+    border: solid white 3px;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: rgb(41, 40, 40);
+}
+.Circle4{
+    margin-left: 94%;
+    border: solid white 3px;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: rgb(41, 40, 40);
+}
+.Circle5{
+    margin-left: 94%;
+    border: solid white 3px;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: rgb(41, 40, 40);
+}
+
+.Download{
+    margin: 0% 0% 0% 27%;
+    display: inline;
+}
+#Download{
+	padding: 1%;
+	background-color: rgba(65, 64, 64, 0.925);
+	text-decoration: none;
+	font-size: 1.8em;
+	color: rgb(227, 233, 233);
+}
+#DownloadLogo{
+	width: 9%;
+	vertical-align: top;
+}
+#Download:hover {
+	padding: 1.2%;
+	background-color: rgba(255, 255, 255, 0.925);
+	text-decoration: none;
+	font-size: 2em;
+	color: rgb(0, 0, 0);
+}
+.DownloadText{
+	text-align: center;
+	padding: 1% 0% 3% 3%;
+	font-size: 0.8em;
+}
+
+
 }

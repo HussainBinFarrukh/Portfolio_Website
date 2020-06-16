@@ -3,6 +3,12 @@
     font-family: wireoneFont;
     src: url('../../../assets/WireOne-Regular.ttf');
   }
+
+
+  @media only screen and (min-width: 700px) {
+
+
+
 .Skill-Sec{
     text-align: center;
     padding: 0% 0% 0% 0%;
@@ -51,4 +57,91 @@
 
 #h2Heading{
     padding: 3%;
+}
+
+
+
+
+  }
+
+
+
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+
+    
+.Skill-Sec{
+    text-align: center;
+    padding: 0% 0% 0% 0%;
+    color: rgb(255, 255, 255);
+}
+
+#MySkill{
+    letter-spacing: 0.1em;
+    font-size: 2.5em;
+    text-decoration: underline;
+    font-family: wireoneFont;
+
+}
+/*<span id="SkillLevel">⬤⬤⬤◐〇</span>*/
+.skillList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    text-align: justify;
+    line-height: 1em;
+    list-style-type: none;
+    margin-left: 5%;
+}
+#listItem{
+    color: rgb(243, 221, 95);
+    font-size: 0.6em;
+    font-family: tttFont;
+    background-color: rgba(77, 77, 77, 0.589);
+        
+
+}
+#SkillLevel{
+    color: rgb(255, 254, 254);
+    font-size: 0.7em;
+    background-color: rgba(0, 0, 0, 0.432);
+    text-align: center;
+    margin: 0% 28% 1% 0% ;
+}
+#listItem:hover{
+    background-color: rgba(0, 0, 0, 0.432);
+}
+#SkillLevel:hover{
+    background-color: black;
+
+}
+
+#h2Heading{
+    padding: 3%;
+}
+
+
+
+
+
 }

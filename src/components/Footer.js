@@ -53,8 +53,11 @@ const Footer = () => (
     <a href="https://www.linkedin.com/in/hussain-bin-farrukh/" target="_blank"><img alt="Image" id="S-Logo" src={linkedin} /> </a>
   
     
-    </div>    
-    <small id="Copyright"> HUSSAIN BIN FARRUKH &copy; </small>
+    </div> 
+    <div className="CopyR">
+    
+    <small  id="Copyright"> HUSSAIN BIN FARRUKH &copy; </small>
+    </div>   
     </div>
 
     

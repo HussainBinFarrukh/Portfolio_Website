@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     transition: ease-in 1s;
+    overflow:hidden;
 }
 ::-webkit-scrollbar {
     width: 10px;

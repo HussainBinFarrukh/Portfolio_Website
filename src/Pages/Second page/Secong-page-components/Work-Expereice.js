@@ -64,7 +64,7 @@ return (
         <img alt="Image" className="TCS" src={TCS} />
 
         </div>
-        <div className="WE-Box" id="WE-Box3">
+        <div className="WE-Box" id="WE-Box3_2">
             <div className="Circle4"></div>
             <img alt="Image" className="ResLife" src={ResLife} />
 
