@@ -204,8 +204,8 @@ label {
     
     
     #S-Logo{
-        width: 5%;
-        margin: 2% 1% 1% 0%;
+        width: 8%;
+        margin: 2% 4% 1% 0%;
         background-color: white;
         border: solid white 2px;
         border-radius: 50%;
@@ -224,7 +224,7 @@ label {
     
 
     .Social{
-        margin-left: 2%;
+        margin-left: 10%;
     }
     
     
@@ -242,11 +242,11 @@ label {
             border-top: #bda27e solid 12px;
             border-left: #b19876 solid 12px;
             border-bottom: #c9ad86 solid 12px;
-            box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 16px 15px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 18px 15px rgba(0, 0, 0, 0.5);
             background-color: #333;
     }
     #C-M-T{
-        font-size: 1.2em;
+        font-size: 2em;
         padding: 2%;
         text-decoration: underline ;
     }
@@ -262,7 +262,7 @@ label {
     label {
             vertical-align: bottom;
             font-family: 'Permanent Marker', cursive;
-            font-size: 0.6em;
+            font-size: 1.2em;
             color: rgba(238, 238, 238, 0.7);
     }
     
