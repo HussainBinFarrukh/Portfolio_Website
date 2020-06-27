@@ -8,7 +8,8 @@ const Landing = () => (
     <div className="whole-page">
             <FirstPage />
             <SecondPage/>
-            
+
+
             
     </div>
     );
@@ -17,7 +18,5 @@ export default Landing;
 /**
  * 
  * 
- *     <div className="Second-page-button">  
-    <a  href="#myVideo"> ⬆ </a> 
-    </div>          
+ *             
  */

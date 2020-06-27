@@ -12,9 +12,7 @@ import Sigi from '../assets/sig.png';
 const Footer = () => (
 <>     
 
-    <div className="Second-page-button">  
-       <a  href="#myVideo"> ⬆ </a> 
-    </div>  
+ 
         
 
     <div id="Contact-page" className="Footer">   
@@ -41,10 +39,14 @@ const Footer = () => (
                 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="hussain-bin-farrukh"><a class="LI-simple-link" href='https://www.linkedin.com/in/hussain-bin-farrukh?trk=profile-badge' target="_blank">Hussain Bin Farrukh</a></div>
             </div>
         </div>
+        
 
     <div className="Second-page-button">  
        <a  href="#myVideo"> ⬆ </a> 
     </div>  
+
+
+    
     <div className="Social">
     <a href="https://www.facebook.com/hussainbinfarukh/" target="_blank"><img alt="Image" id="S-Logo" src={fb}/> </a>
     <a href="https://www.instagram.com/hussainbinfarrukh/" target="_blank"><img alt="Image" id="S-Logo" src={Insta} /> </a>
@@ -54,10 +56,15 @@ const Footer = () => (
   
     
     </div> 
-    <div className="CopyR">
-    
-    <small  id="Copyright"> HUSSAIN BIN FARRUKH &copy; </small>
+    <div className="CopyR">                          
+    <small  id="Copyright"> HUSSAIN BIN FARRUKH &copy; </small>                                
     </div>   
+    
+    <a href="" target="_blank">
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7531825&style=0038&nbdigits=5&type=page&initCount=65" title="Web Counter" Alt="counter free"   border="0" />
+    </a>       
+
+
     </div>
 
     
