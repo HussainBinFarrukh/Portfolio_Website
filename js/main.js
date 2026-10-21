@@ -10,7 +10,9 @@
   if (!hasGsap) {
     root.classList.remove("anim");
     var flowHost = document.getElementById("flow");
-    if (flowHost && window.FlowDiagram) FlowDiagram.build(flowHost, flowHost.clientWidth < 440);
+    if (flowHost && window.FlowDiagram) FlowDiagram.build(flowHost, flowHost.clientWidth < 600);
+    if (window.Brain) Brain.build(document.querySelector(".brain"));
+    loopWork();
     return;
   }
   window.__animReady = true;
@@ -45,7 +47,8 @@
     stats();
     flow();
     agents();
-    work();
+    loopWork();
+    workReveal();
     timeline();
     pointerEffects();
     ScrollTrigger.refresh();
@@ -109,70 +112,53 @@
     var nums = document.querySelectorAll(".stat-num");
     if (reduce) return;
     nums.forEach(function (n) {
-      var to = parseFloat(n.dataset.to), pre = n.dataset.prefix || "", suf = n.dataset.suffix || "", o = { v: 0 };
-      n.textContent = pre + "0" + suf;
+      if (!n.dataset.to) return;
+      var to = parseFloat(n.dataset.to), dec = parseInt(n.dataset.decimals || "0", 10), pre = n.dataset.prefix || "", suf = n.dataset.suffix || "", o = { v: 0 };
+      n.textContent = pre + (0).toFixed(dec) + suf;
       gsap.to(o, { v: to, duration: 1.8, ease: "power3.out",
-        onUpdate: function () { n.textContent = pre + Math.round(o.v) + suf; },
+        onUpdate: function () { n.textContent = pre + o.v.toFixed(dec) + suf; },
         scrollTrigger: { trigger: n, start: "top 90%", once: true } });
     });
     gsap.from(".stat", { y: 24, autoAlpha: 0, duration: 0.9, stagger: 0.08, ease: "power3.out",
       scrollTrigger: { trigger: ".stats", start: "top 88%", once: true } });
   }
 
-  // Integration diagram: draws as you scroll, then packets loop ----------
+  // Integration landscape: intro on first view, then the lifecycle loops
+  // while the section is on screen.
   function flow() {
     var host = document.getElementById("flow");
     if (!host || !window.FlowDiagram) return;
-    var steps = document.querySelectorAll(".flow-steps li");
+    var stepsEl = document.querySelectorAll(".lifecycle li");
+    var setStep = function (k) {
+      stepsEl.forEach(function (li, i) { li.classList.toggle("on", i === k); li.classList.toggle("done", i < k); });
+    };
     var mm = gsap.matchMedia();
-
-    mm.add({ wide: "(min-width: 520px)", narrow: "(max-width: 519px)", reduce: "(prefers-reduced-motion: reduce)" }, function (ctx) {
+    mm.add({ wide: "(min-width: 600px)", narrow: "(max-width: 599px)", reduce: "(prefers-reduced-motion: reduce)" }, function (ctx) {
       var r = FlowDiagram.build(host, ctx.conditions.narrow);
-      if (ctx.conditions.reduce || !hasDraw) {
-        steps.forEach(function (s) { s.classList.add("on"); });
+      if (ctx.conditions.reduce || !hasMotion) {
+        stepsEl.forEach(function (li) { li.classList.add("done"); });
         return;
       }
-      var setStep = function (k) { steps.forEach(function (s, i) { s.classList.toggle("on", i === k); }); };
-      setStep(-1);
+      var loop = FlowDiagram.lifecycle(r, { scramble: hasScramble, onStep: setStep });
+      var nodes = Object.keys(r.nodes).map(function (k) { return r.nodes[k]; });
+      var paths = Object.keys(r.edges).map(function (k) { return r.edges[k]; });
+      var intro = gsap.timeline({ paused: true, onComplete: function () { loop.play(0); } });
+      intro.from(nodes, { autoAlpha: 0, scale: 0.9, transformOrigin: "50% 50%", stagger: 0.05, duration: 0.5, ease: "back.out(1.6)" }, 0)
+        .from(r.hub, { autoAlpha: 0, scale: 0.92, transformOrigin: "50% 50%", duration: 0.6, ease: "back.out(1.4)" }, 0.2);
+      if (hasDraw) intro.fromTo(paths, { drawSVG: "0%" }, { drawSVG: "100%", stagger: 0.04, duration: 0.7, ease: "power1.inOut" }, 0.4);
+      if (r.edgeLabels.length) intro.from(r.edgeLabels, { autoAlpha: 0, duration: 0.4, stagger: 0.03 }, 0.9);
+      gsap.to(r.hubGlow, { scale: 1.02, transformOrigin: "50% 50%", duration: 1.8, yoyo: true, repeat: -1, ease: "sine.inOut" });
 
-      var loopStarted = false;
-      var tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".flow-section", start: "top 70%", end: "center 50%", scrub: 0.8,
-          onUpdate: function (self) {
-            var p = self.progress;
-            setStep(p < 0.02 ? -1 : p < 0.4 ? 0 : p < 0.75 ? 1 : 2);
-            if (p > 0.97 && !loopStarted) {
-              // Draw once: lock the finished diagram, then start the packet loop.
-              loopStarted = true;
-              self.kill();
-              tl.progress(1);
-              steps.forEach(function (s) { s.classList.add("on"); });
-              packets(r);
-            }
-          }
+      var started = false;
+      ScrollTrigger.create({
+        trigger: ".flow-figure", start: "top 80%", end: "bottom top",
+        onToggle: function (self) {
+          if (self.isActive && !started) { started = true; intro.play(); }
+          else if (started && intro.progress() === 1) { self.isActive ? loop.resume() : loop.pause(); }
         }
       });
-      tl.from(r.groups, { autoAlpha: 0, duration: 0.3 })
-        .from(r.sources, { autoAlpha: 0, x: -24, stagger: 0.12, duration: 0.5 }, 0)
-        .fromTo(r.inPaths, { drawSVG: "0%" }, { drawSVG: "100%", stagger: 0.1, duration: 0.8 }, 0.35)
-        .from(r.hub, { autoAlpha: 0, scale: 0.85, transformOrigin: "50% 50%", duration: 0.6, ease: "back.out(1.6)" }, 1)
-        .fromTo(r.outPaths, { drawSVG: "0%" }, { drawSVG: "100%", stagger: 0.1, duration: 0.8 }, 1.4)
-        .from(r.targets, { autoAlpha: 0, x: ctx.conditions.narrow ? 0 : 24, y: ctx.conditions.narrow ? 20 : 0, stagger: 0.12, duration: 0.5 }, 1.9);
-
-      gsap.to(r.hubGlow, { opacity: 0.1, scale: 1.04, transformOrigin: "50% 50%", duration: 1.6, yoyo: true, repeat: -1, ease: "sine.inOut" });
+      return function () { loop.kill(); intro.kill(); setStep(-1); };
     });
-
-    function packets(r) {
-      if (!hasMotion) return;
-      r.packets.forEach(function (pk, i) {
-        var t = gsap.timeline({ repeat: -1, delay: i * 1.15, repeatDelay: 1.2 + Math.random() * 1.5 });
-        t.set(pk.g, { opacity: 0 })
-          .to(pk.g, { motionPath: { path: pk.route, align: pk.route, alignOrigin: [0.5, 0.5] }, duration: 4, ease: "power1.inOut" }, 0)
-          .to(pk.g, { opacity: 1, duration: 0.3 }, 0)
-          .to(pk.g, { opacity: 0, duration: 0.3 }, 3.7);
-      });
-    }
   }
 
   // Agent orchestration: pinned, scroll-driven run ------------------------
@@ -189,6 +175,10 @@
     var beams = {};
     stage.querySelectorAll(".beam-live path").forEach(function (p) { beams[p.dataset.beam] = p; });
     var beamStep = { "b-req": 1, "b-cfg": 2, "b-map": 3, "b-mon": 4, "b-exc": 5, "b-gate": 6, "b-prod": 7 };
+    var brain = window.Brain ? Brain.build(stage.querySelector(".brain")) : null;
+    var hint = section.querySelector(".scroll-hint");
+    // How busy the brain looks at each step: planning and agents working run hottest.
+    var brainLevel = [0.25, 0.9, 0.75, 0.75, 0.75, 0.85, 0.4, 0.3];
 
     // Store the final text of every animated line once.
     var texts = stage.querySelectorAll(".log li, .request-text, .orch-plan");
@@ -205,6 +195,8 @@
     }
 
     function applyStep(k, approved, live) {
+      if (brain) brain.setActivity(brainLevel[k]);
+      if (hint) hint.classList.toggle("gone", k >= 7);
       stepN.textContent = String(k + 1);
       stepText.textContent = labels[k];
       agentKeys.forEach(function (key, i) {
@@ -329,24 +321,24 @@
     });
   }
 
-  // Implementations: horizontal track pinned on desktop --------------------
-  function work() {
-    var mm = gsap.matchMedia();
-    mm.add("(min-width: 900px) and (prefers-reduced-motion: no-preference)", function () {
-      var track = document.querySelector(".work-track");
-      var dist = function () { return Math.max(0, track.scrollWidth - window.innerWidth); };
-      var tween = gsap.to(track, { x: function () { return -dist(); }, ease: "none",
-        scrollTrigger: { trigger: ".work", start: "top top", end: function () { return "+=" + dist(); }, pin: ".work-pin", scrub: 0.7, invalidateOnRefresh: true, anticipatePin: 1 } });
-      track.querySelectorAll(".project").forEach(function (card) {
-        gsap.fromTo(card, { autoAlpha: 0.35, scale: 0.94, rotateY: -8, transformPerspective: 1000 }, { autoAlpha: 1, scale: 1, rotateY: 0, ease: "none",
-          scrollTrigger: { trigger: card, containerAnimation: tween, start: "left 95%", end: "left 60%", scrub: true } });
-      });
-    });
-    mm.add("(max-width: 899px) and (prefers-reduced-motion: no-preference)", function () {
-      gsap.utils.toArray(".project").forEach(function (card) {
-        gsap.from(card, { y: 30, autoAlpha: 0, duration: 0.8, ease: "power3.out", scrollTrigger: { trigger: card, start: "top 90%", once: true } });
-      });
-    });
+  // Implementations: a continuous loop. The card set is cloned once so the
+  // track can slide by exactly one set width; CSS runs the motion.
+  function loopWork() {
+    var track = document.querySelector(".work-track");
+    if (!track || track.classList.contains("looping")) return;
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var set = track.querySelector(".work-set");
+    var clone = set.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    clone.setAttribute("inert", "");
+    track.appendChild(clone);
+    track.classList.add("looping");
+  }
+
+  function workReveal() {
+    if (reduce) return;
+    gsap.from(".work-loop", { autoAlpha: 0, x: 80, duration: 1.2, ease: "expo.out",
+      scrollTrigger: { trigger: ".work", start: "top 75%", once: true } });
   }
 
   // Career line draws as you scroll -----------------------------------------
