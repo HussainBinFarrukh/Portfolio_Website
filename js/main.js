@@ -116,7 +116,7 @@
       var to = parseFloat(n.dataset.to), dec = parseInt(n.dataset.decimals || "0", 10), pre = n.dataset.prefix || "", suf = n.dataset.suffix || "", o = { v: 0 };
       n.textContent = pre + (0).toFixed(dec) + suf;
       gsap.to(o, { v: to, duration: 1.8, ease: "power3.out",
-        onUpdate: function () { n.textContent = pre + o.v.toFixed(dec) + suf; },
+        onUpdate: function () { var v = o.v.toFixed(dec); if (n.dataset.group) v = Number(v).toLocaleString("en-US"); n.textContent = pre + v + suf; },
         scrollTrigger: { trigger: n, start: "top 90%", once: true } });
     });
     gsap.from(".stat", { y: 24, autoAlpha: 0, duration: 0.9, stagger: 0.08, ease: "power3.out",
