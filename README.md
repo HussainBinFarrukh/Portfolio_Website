@@ -34,6 +34,6 @@ Run `python3 -m http.server` in this folder and visit http://localhost:8000. Ope
 
 ## Publish
 
-GitHub Pages serves this site from the `gh-pages` branch. To publish, copy `index.html`, `styles.css`, `favicon.svg`, `.nojekyll`, and the `js/` folder to the root of `gh-pages` and push.
+GitHub Pages serves this site from the `gh-pages` branch. To publish, copy `index.html`, `styles.css`, `favicon.svg`, `service-worker.js`, `.nojekyll`, and the `js/` folder to the root of `gh-pages` and push. `service-worker.js` only retires the worker left behind by the old React build; keep it in place.
 
 The previous React version of the site is preserved in this repository's git history.
