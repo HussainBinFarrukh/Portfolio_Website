@@ -8,10 +8,11 @@ Live: https://hussainbinfarrukh.github.io/Portfolio_Website/
 
 Plain static files, no build step. Libraries load from the jsDelivr CDN.
 
-- `index.html` holds all of the content. Edit text here, including the agent run's log lines.
+- `index.html` holds all of the content. Edit text here, including the stats, implementation cards, side projects, and the agent run's log lines.
 - `styles.css` holds colors, type, and layout. Color tokens are at the top: teal is data flow, blue is agents, amber is human review and production.
 - `js/hero.js` draws the 3D routing mesh in the hero (three.js).
-- `js/flow.js` builds the integration diagram. Node names and transaction labels are at the top of the file.
+- `js/flow.js` builds the integration landscape and its looping document lifecycle (832, 850, 940, 945, 856, 810). Systems, hops, and console lines are defined at the top of the file.
+- `js/brain.js` draws the orchestrator's neural-network brain in the agent run.
 - `js/main.js` runs all scroll and page animation (GSAP with ScrollTrigger, SplitText, ScrambleText, DrawSVG, MotionPath; Lenis smooth scroll).
 
 ## Libraries
