@@ -30,6 +30,10 @@ Plain static files, no build step. Libraries load from the jsDelivr CDN.
 - If the CDN scripts fail to load, all content still renders as a normal static page.
 - The agent run is decorative; a screen-reader description of each step sits in the markup.
 
+## Analytics
+
+Visits are counted with GoatCounter (no cookies, no consent banner). The dashboard is at https://hbfportfolio.goatcounter.com. Local previews on `localhost` are not counted.
+
 ## Preview locally
 
 Run `python3 -m http.server` in this folder and visit http://localhost:8000. Opening `index.html` directly also works, but the hero mesh needs a local server because it is an ES module.
