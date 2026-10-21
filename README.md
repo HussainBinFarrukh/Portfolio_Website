@@ -10,6 +10,7 @@ Plain static files, no build step. Libraries load from the jsDelivr CDN.
 
 - `index.html` holds all of the content. Edit text here, including the stats, implementation cards, side projects, and the agent run's log lines.
 - `styles.css` holds colors, type, and layout. Color tokens are at the top: teal is data flow, blue is agents, amber is human review and production.
+- `assets/` holds the headshot in web sizes (`portrait-480/800`, WebP and JPEG), a square avatar, and `og-card.jpg`, the 1200x630 preview shown when the link is shared.
 - `js/hero.js` draws the 3D routing mesh in the hero (three.js).
 - `js/flow.js` builds the integration landscape and its looping document lifecycle (832, 850, 940, 945, 856, 810). Systems, hops, and console lines are defined at the top of the file.
 - `js/brain.js` draws the orchestrator's neural-network brain in the agent run.
@@ -35,6 +36,6 @@ Run `python3 -m http.server` in this folder and visit http://localhost:8000. Ope
 
 ## Publish
 
-GitHub Pages serves this site from the `gh-pages` branch. To publish, copy `index.html`, `styles.css`, `favicon.svg`, `service-worker.js`, `.nojekyll`, and the `js/` folder to the root of `gh-pages` and push. `service-worker.js` only retires the worker left behind by the old React build; keep it in place.
+GitHub Pages serves this site from the `gh-pages` branch. To publish, copy `index.html`, `styles.css`, `favicon.svg`, `service-worker.js`, `.nojekyll`, and the `js/` and `assets/` folders to the root of `gh-pages` and push. `service-worker.js` only retires the worker left behind by the old React build; keep it in place.
 
 The previous React version of the site is preserved in this repository's git history.

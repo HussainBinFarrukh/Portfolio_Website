@@ -76,7 +76,9 @@
     gsap.set(chars, { yPercent: 110, autoAlpha: 0, rotateX: -70, transformOrigin: "50% 100%" });
     root.classList.remove("anim");
 
-    tl.to(".hero-kicker", { autoAlpha: 1, y: 0, duration: 0.9 }, 0.1)
+    gsap.set(".hero-portrait", { autoAlpha: 0, clipPath: "inset(100% 0% 0% 0% round 28px)", scale: 1.06 });
+    tl.to(".hero-portrait", { autoAlpha: 1, clipPath: "inset(0% 0% 0% 0% round 28px)", scale: 1, duration: 1.5, ease: "expo.inOut" }, 0)
+      .to(".hero-kicker", { autoAlpha: 1, y: 0, duration: 0.9 }, 0.1)
       .to(".hello", { autoAlpha: 1, y: 0, duration: 0.8 }, 0.25)
       .to(chars, { yPercent: 0, autoAlpha: 1, rotateX: 0, duration: 1.2, stagger: 0.035 }, 0.35)
       .to(".hero-role", { autoAlpha: 1, y: 0, duration: 0.9 }, "-=0.7")
@@ -93,7 +95,9 @@
       }, "+=1.4");
     }
 
-    gsap.to(".hero-inner", { yPercent: -10, autoAlpha: 0.2, ease: "none",
+    gsap.to(".hero-text", { yPercent: -10, autoAlpha: 0.2, ease: "none",
+      scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
+    gsap.to(".hero-portrait", { yPercent: -18, ease: "none",
       scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
   }
 
