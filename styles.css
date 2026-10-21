@@ -80,9 +80,9 @@ a:hover { text-decoration-color: var(--ink); }
     radial-gradient(ellipse 60% 75% at 18% 50%, rgba(10,18,32,0.92), rgba(10,18,32,0.55) 55%, rgba(10,18,32,0) 80%),
     linear-gradient(180deg, rgba(10,18,32,0) 70%, var(--bg));
 }
-.hero-inner { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 380px); grid-template-areas: "text portrait"; gap: clamp(32px, 5vw, 72px); align-items: center; }
+.hero-inner { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, 250px); grid-template-areas: "text portrait"; gap: clamp(32px, 5vw, 72px); align-items: center; }
 .hero-text { grid-area: text; min-width: 0; }
-.hero-portrait { grid-area: portrait; position: relative; margin: 0; aspect-ratio: 4 / 5; border-radius: 28px; isolation: isolate; }
+.hero-portrait { grid-area: portrait; position: relative; margin: 0; aspect-ratio: 4 / 5; border-radius: 22px; isolation: isolate; align-self: center; }
 .hero-portrait::before { content: ""; position: absolute; inset: -18%; z-index: -1; border-radius: 50%; background: radial-gradient(closest-side, rgba(122,168,255,0.28), rgba(79,194,178,0.12) 55%, transparent 75%); filter: blur(8px); }
 .hero-portrait picture, .hero-portrait img { display: block; width: 100%; height: 100%; }
 .hero-portrait img { object-fit: cover; object-position: 50% 30%; border-radius: inherit; border: 1px solid var(--line-2); box-shadow: 0 40px 80px -40px rgba(0,0,0,0.9); }
