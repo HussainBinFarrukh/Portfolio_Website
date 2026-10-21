@@ -56,26 +56,33 @@
 
   // Hero -------------------------------------------------------------------
   function heroIntro() {
-    var title = document.querySelector(".hero-title");
+    var name = document.querySelector(".hero-name");
     var scr = document.querySelector(".scramble");
+    var header = document.querySelector(".site-header");
+
+    // The header name stays hidden while the big hero name is on screen.
+    header.classList.add("name-hidden");
+    ScrollTrigger.create({ trigger: name, start: "bottom 64px", end: "max",
+      onEnter: function () { header.classList.remove("name-hidden"); },
+      onLeaveBack: function () { header.classList.add("name-hidden"); } });
+
     if (reduce) { root.classList.remove("anim"); return; }
 
     var tl = gsap.timeline({ defaults: { ease: "expo.out" } });
-    var words = [title];
-    if (hasSplit) {
-      var split = SplitText.create(title, { type: "lines,words", mask: "lines", linesClass: "line" });
-      words = split.words;
-    }
-    gsap.set([".hero-kicker", ".hero-focus", ".lede", ".hero-links > *", ".where"], { autoAlpha: 0, y: 18 });
-    gsap.set(words, { yPercent: 115 });
+    var chars = [name];
+    if (hasSplit) chars = SplitText.create(name.querySelectorAll("span"), { type: "chars", charsClass: "char" }).chars;
+    var rest = [".hero-role", ".lede", ".hero-focus", ".hero-links > *"];
+    gsap.set([".hero-kicker", ".hello"].concat(rest), { autoAlpha: 0, y: 18 });
+    gsap.set(chars, { yPercent: 110, autoAlpha: 0, rotateX: -70, transformOrigin: "50% 100%" });
     root.classList.remove("anim");
 
-    tl.to(".hero-kicker", { autoAlpha: 1, y: 0, duration: 0.9 }, 0.15)
-      .to(words, { yPercent: 0, duration: 1.15, stagger: 0.035 }, 0.25)
-      .to(".hero-focus", { autoAlpha: 1, y: 0, duration: 0.9 }, "-=0.7")
-      .to(".lede", { autoAlpha: 1, y: 0, duration: 0.9 }, "-=0.75")
-      .to(".hero-links > *", { autoAlpha: 1, y: 0, duration: 0.8, stagger: 0.07 }, "-=0.7")
-      .to(".where", { autoAlpha: 1, y: 0, duration: 0.8 }, "-=0.6");
+    tl.to(".hero-kicker", { autoAlpha: 1, y: 0, duration: 0.9 }, 0.1)
+      .to(".hello", { autoAlpha: 1, y: 0, duration: 0.8 }, 0.25)
+      .to(chars, { yPercent: 0, autoAlpha: 1, rotateX: 0, duration: 1.2, stagger: 0.035 }, 0.35)
+      .to(".hero-role", { autoAlpha: 1, y: 0, duration: 0.9 }, "-=0.7")
+      .to(".lede", { autoAlpha: 1, y: 0, duration: 0.9 }, "-=0.7")
+      .to(".hero-focus", { autoAlpha: 1, y: 0, duration: 0.8 }, "-=0.7")
+      .to(".hero-links > *", { autoAlpha: 1, y: 0, duration: 0.8, stagger: 0.07 }, "-=0.65");
 
     if (scr && hasScramble) {
       var list = scr.dataset.words.split("|"), i = 0;
@@ -86,8 +93,7 @@
       }, "+=1.4");
     }
 
-    // Hero content drifts up and fades as you scroll away
-    gsap.to(".hero-inner", { yPercent: -12, autoAlpha: 0.15, ease: "none",
+    gsap.to(".hero-inner", { yPercent: -10, autoAlpha: 0.2, ease: "none",
       scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
   }
 
