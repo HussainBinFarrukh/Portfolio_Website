@@ -139,7 +139,7 @@ function init() {
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
     const wide = w > 900;
-    group.position.x = wide ? 5.2 : 0;
+    group.position.x = wide ? 6.2 : 0;
     group.position.y = wide ? 0 : 1.5;
     group.scale.setScalar(wide ? 1 : 0.82);
   }
