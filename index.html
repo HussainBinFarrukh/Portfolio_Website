@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hussain Bin Farrukh | Enterprise Integration and Agentic AI</title>
+  <meta name="description" content="Forward Deployed Engineer at PartnerLinQ. Six years taking ERP, EDI, API, and AI agent programs from discovery to production.">
+  <meta property="og:title" content="Hussain Bin Farrukh">
+  <meta property="og:description" content="Enterprise integration and agentic AI, from discovery to production.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hussainbinfarrukh.github.io/Portfolio_Website/">
+  <meta name="theme-color" content="#EEF2F5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1726" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="wordmark" href="#top">Hussain Bin Farrukh</a>
+      <nav aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#ai">AI agents</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-copy">
+        <h1>I connect the systems enterprises run on, and build the AI agents that keep them running.</h1>
+        <p class="lede">Forward Deployed Engineer at PartnerLinQ. Six years taking ERP, EDI, API, and AI agent programs from discovery to production for apparel, automotive, manufacturing, and logistics companies, usually on site with the customer.</p>
+        <p class="hero-links">
+          <a class="button primary" href="mailto:HussainBFarrukh@gmail.com">Email me</a>
+          <a class="button" href="https://www.linkedin.com/in/hussain-bin-farrukh/" rel="noopener">LinkedIn</a>
+          <a class="button" href="https://github.com/HussainBinFarrukh" rel="noopener">GitHub</a>
+        </p>
+        <p class="where">Central New Jersey, NYC metro. Open to remote and hybrid roles.</p>
+      </div>
+      <figure class="flow-figure">
+        <div id="flow" class="flow" role="img" aria-label="Diagram: orders move from ERP systems such as SAP, Dynamics 365, and NetSuite through PartnerLinQ to trading partners, 3PL warehouses, and parcel carriers."></div>
+        <figcaption>A typical program: an order leaves the ERP, PartnerLinQ maps and validates it, and it reaches the trading partners, warehouses, and carriers on the other side.</figcaption>
+      </figure>
+    </section>
+
+    <section class="band" id="about" aria-labelledby="about-h">
+      <div class="wrap two-col">
+        <h2 id="about-h">What I do</h2>
+        <div class="prose">
+          <p>I own implementations end to end. That starts in discovery, where a fragmented stack and a list of business workflows become integration requirements, data flows, and a phased plan. It continues through configuration, SIT and UAT, cutover, and hypercare, with scope held through SOWs and change requests and status reported to customer leadership.</p>
+          <p>Most of my work sits between an ERP and everything it has to talk to: trading partners over EDI and AS2, SFTP, or VAN; Shopify and other sales channels over APIs and webhooks; 3PL and WMS systems; and parcel carriers. On the presales side I run technical discovery, write the solution and the SOW, and stay on the account after go-live to scope the next phase.</p>
+          <p>I also design the LLM agents in PartnerLinQ's LinQ.IQ, built around the same configuration, mapping, and exception work I do by hand on customer programs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="work" aria-labelledby="work-h">
+      <h2 id="work-h">Selected implementations</h2>
+      <p class="section-intro">Each line shows the system flow I was responsible for.</p>
+
+      <article class="project">
+        <header>
+          <h3>Redstone and JCB</h3>
+          <p class="sector">Heavy equipment, parcel fulfillment</p>
+        </header>
+        <div class="project-body">
+          <p class="route"><span>SAP</span><i aria-hidden="true">→</i><span>PartnerLinQ</span><i aria-hidden="true">→</i><span>Redstone, DSV, Kuehne+Nagel, Maersk</span><i aria-hidden="true">→</i><span>UPS, FedEx, DHL, Purolator</span></p>
+          <p>Parcel fulfillment across four major warehouses in North America, integrating SAP with multiple 3PLs and warehouse systems and connecting directly to the carriers. I proposed and designed an order validation step that combines business rules with AI checks before an order reaches the warehouse, and the ShipLinQ module that generates labels through direct carrier integrations.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3>Vuori</h3>
+          <p class="sector">Apparel</p>
+        </header>
+        <div class="project-body">
+          <p class="route"><span>Dynamics 365</span><i aria-hidden="true">↔</i><span>Shopify, BrandID</span><i aria-hidden="true">↔</i><span>EDI trading partners, 3PLs</span></p>
+          <p>Ran the implementation from kickoff through go-live and post-launch support. More than $1B in revenue moved through these integrations in the first year live.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3>Marc Jacobs</h3>
+          <p class="sector">Fashion</p>
+        </header>
+        <div class="project-body">
+          <p class="route"><span>Dynamics AX 2012</span><i aria-hidden="true">→</i><span>Dynamics 365 F&amp;O</span><i aria-hidden="true">+</i><span>EDI and VAN migration</span></p>
+          <p>ERP upgrade from AX 2012 to D365 Finance and Operations, covering the EDI integrations and a VAN migration. On site in Manhattan through UAT and go-live. Partner onboarding now takes three to four days.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3>MVT</h3>
+          <p class="sector">Transportation and logistics</p>
+        </header>
+        <div class="project-body">
+          <p class="route"><span>McLeod, Trimble, AS/400</span><i aria-hidden="true">→</i><span>One partner profile</span><i aria-hidden="true">→</i><span>150+ trading partners</span></p>
+          <p>Designed a single-profile model that moves partner-specific handling into the middleware, so a new partner is configuration rather than a new build. Scaled to more than 150 partners and 130,000 transactions a month.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3>TYC</h3>
+          <p class="sector">Automotive aftermarket</p>
+        </header>
+        <div class="project-body">
+          <p class="route"><span>Dynamics 365 F&amp;O</span><i aria-hidden="true">↔</i><span>EDI and sales channels</span><i aria-hidden="true">↔</i><span>30+ customers including GM, Nissan, Daimler</span></p>
+          <p>Migration to D365 F&amp;O with EDI to more than 30 automotive OEM and aftermarket customers.</p>
+        </div>
+      </article>
+
+      <div class="presales">
+        <h3>Presales</h3>
+        <p>Led technical presales through to signature for Spindrift, a State of Ohio healthcare program, Sealey in the UK, and several logistics carriers, then scoped the follow-on phases after go-live. I also build the reusable onboarding templates and playbooks that later programs start from, and carry recurring customer needs back into the product roadmap.</p>
+      </div>
+    </section>
+
+    <section class="band" id="ai" aria-labelledby="ai-h">
+      <div class="wrap two-col">
+        <h2 id="ai-h">AI agents in LinQ.IQ</h2>
+        <div>
+          <p class="prose-intro">LinQ.IQ is the agent layer of the PartnerLinQ platform and is live. I designed these workflows from the manual work they replace, with a person reviewing before anything changes in production.</p>
+          <dl class="agents">
+            <div>
+              <dt>Configuration and workflow agent</dt>
+              <dd>Handles integration configuration and runs integration workflows.</dd>
+            </div>
+            <div>
+              <dt>Mapping agent</dt>
+              <dd>Drafts data maps from a trading partner's specification for an analyst to review.</dd>
+            </div>
+            <div>
+              <dt>Multi-agent orchestration</dt>
+              <dd>Routes a single onboarding or support request across the configuration, mapping, monitoring, and exception agents, with an audit trail and approval gates.</dd>
+            </div>
+            <div>
+              <dt>Presales agent</dt>
+              <dd>Helps draft presales deliverables.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="experience" aria-labelledby="exp-h">
+      <h2 id="exp-h">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="org">
+            <h3>PartnerLinQ</h3>
+            <p>Cranbury, New Jersey</p>
+          </div>
+          <ul class="roles">
+            <li><span class="role">Forward Deployed Engineer</span><span class="dates">Jan 2025 to present</span></li>
+            <li><span class="role">Advisory Software Engineer</span><span class="dates">Jan 2024 to Dec 2024</span></li>
+            <li><span class="role">Senior Software Engineer</span><span class="dates">Oct 2023 to Dec 2023</span></li>
+          </ul>
+        </li>
+        <li>
+          <div class="org">
+            <h3>Visionet Systems</h3>
+            <p>Cranbury, New Jersey</p>
+          </div>
+          <ul class="roles">
+            <li><span class="role">Senior Software Engineer</span><span class="dates">Oct 2022 to Sep 2023</span></li>
+            <li><span class="role">Associate Consultant</span><span class="dates">Sep 2020 to Sep 2022</span></li>
+            <li><span class="role">Software Engineer Intern</span><span class="dates">Jul 2020 to Sep 2020</span></li>
+          </ul>
+          <p class="org-note">Delivered ERP and EDI integrations on the PartnerLinQ platform: maps, partner configurations, SIT, UAT, and cutover with customer IT teams. Implemented procure-to-pay and order-to-cash flows between ERPs, suppliers, 3PLs, and SAP Ariba environments.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="toolkit" aria-labelledby="tools-h">
+      <div class="wrap two-col">
+        <h2 id="tools-h">Toolkit</h2>
+        <dl class="tools">
+          <div>
+            <dt>ERP and commerce</dt>
+            <dd>Dynamics 365 F&amp;O, Dynamics AX 2012, SAP S/4HANA, NetSuite, SAP Ariba, Coupa, Salesforce Commerce Cloud, Shopify, BigCommerce</dd>
+          </div>
+          <div>
+            <dt>Logistics</dt>
+            <dd>McLeod and Trimble TMS; DSV, Kuehne+Nagel, Maersk, Körber, and ShipBob 3PL and WMS; UPS, FedEx, DHL, and Purolator carrier APIs</dd>
+          </div>
+          <div>
+            <dt>Integration</dt>
+            <dd>REST APIs, GraphQL, webhooks, SAP IDoc, OData, D365 F&amp;O services, EDI X12, EDIFACT, cXML, JSON, XML, XSLT, AS2, SFTP, VAN, Azure Data Factory, SQL, Cosmos DB, Postman</dd>
+          </div>
+          <div>
+            <dt>AI</dt>
+            <dd>Agentic workflow design, multi-agent orchestration, AI-assisted mapping, human-in-the-loop review</dd>
+          </div>
+          <div>
+            <dt>Delivery</dt>
+            <dd>Discovery, solution architecture, RFPs and SOWs, project plans, scope and change control, SIT and UAT, cutover, hypercare, executive reporting</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="wrap section split" aria-label="Side projects and education">
+      <div>
+        <h2>Side projects</h2>
+        <div class="side">
+          <h3>ClipsShort</h3>
+          <p>Uses OpenAI models to turn long YouTube videos into short-form clips. Built on my own time.</p>
+          <p><a href="https://github.com/HussainBinFarrukh" rel="noopener">Code on GitHub</a></p>
+        </div>
+      </div>
+      <div>
+        <h2>Education</h2>
+        <div class="side">
+          <h3>B.S., Computer Science</h3>
+          <p>The University of Southern Mississippi, 2020</p>
+        </div>
+        <div class="side">
+          <h3>Business Analytics: From Data to Insights</h3>
+          <p>The Wharton School, 3-month professional course, 2024</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="contact-line">The fastest way to reach me is email: <a href="mailto:HussainBFarrukh@gmail.com">HussainBFarrukh@gmail.com</a></p>
+      <p class="contact-links">
+        <a href="https://www.linkedin.com/in/hussain-bin-farrukh/" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/HussainBinFarrukh" rel="noopener">GitHub</a>
+      </p>
+      <p class="copyright">&copy; <span id="year">2026</span> Hussain Bin Farrukh</p>
+    </div>
+  </footer>
+
+  <script src="flow.js" defer></script>
+</body>
+</html>
